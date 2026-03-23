@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: bitcoin-wallet-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bitcoin_wallet_bot.py
+    envVars:
+      - key: 8767388087:AAFSK2pN9ItLkp06yeMlJlvrhQZErcMQpr0
+        sync: false
